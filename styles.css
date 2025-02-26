@@ -1,0 +1,101 @@
+/* Apply background image with a faded effect */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('IMG_0191.JPG') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Overlay to fade the background */
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity for fading effect */
+    z-index: -1;
+}
+
+/* Centered quote styling inside a box */
+.quote-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for contrast */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.quote {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+/* Table styling */
+table {
+    background: rgba(255, 255, 255, 0.2);
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: yellow;
+}
+
+/* About Me Page Layout */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    min-height: 400px; /* Increased height for a longer box */
+}
+
+/* Text Box Styling */
+.about-text {
+    width: 50%;
+    padding: 30px;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    min-height: 100%;
+}
+
+/* Image Styling */
+.about-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
